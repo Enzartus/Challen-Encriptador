@@ -13,15 +13,26 @@
         <header></header>
         <main>
             <div>
-                <img src="logo.png" alt="Logo">
+                <img src="logo.png" class="logo" alt="Logo">
                 <form action="#">
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
-                    <label for="mensaje">Solo letras minúsculas y sin acentos.</label>
-                    <button type="button">Encriptar</button>
-                    <button type="button">Desencriptar</button>
+                    <textarea name="mensaje" class="mensaje" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+                    <label for="mensaje" class="leyenda">
+                        <img src="exclamacion.png" alt="exclamacion" class="exclamacion">
+                        Solo letras minúsculas y sin acentos.
+                    </label>
+                    <div class="botones">
+                        <button type="button" class="encriptar">Encriptar</button>
+                        <button type="button" class="desencriptar">Desencriptar</button>
+                    </div>
                 </form>
             </div>
-            <div></div>
+            <div class="rectangulo">
+                <img src="message.png" alt="Mensaje">
+                <div class="texto">
+                    <h1>Ningún mensaje fue encotrado.</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
         </main>
         <footer></footer>
     </body>
