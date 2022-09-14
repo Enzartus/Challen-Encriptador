@@ -7,33 +7,44 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style-encriptador.css">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <script src="encriptador.js"></script>
         <title>Encriptador</title>
     </head>
     <body>
-        <!--<header></header>-->
+
+        <header>
+            <img src="logo.png" alt="Logo-Encriptador" title="Logo Encriptador">
+        </header>
+
         <main>
             <div>
-                <img src="logo.png" class="logo" alt="Logo">
-                <form action="#">
-                    <textarea name="mensaje" class="mensaje" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
-                    <label for="mensaje" class="leyenda">
-                        <img src="exclamacion.png" alt="exclamacion" class="exclamacion">
-                        Solo letras minúsculas y sin acentos.
+                <form>
+                    <label for="mensaje" class="recordatorio">
+                        <img src="exclamacion.png" alt="icon-exclamacion" title="icon-exclamacion" class="icon-exclamacion">
+                        Solo letras minúsculas y sin acentos
                     </label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui..."></textarea>
                     <div class="botones">
-                        <button type="button" class="encriptar">Encriptar</button>
-                        <button type="button" class="desencriptar">Desencriptar</button>
+                        <button class="encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                        <button class="desencriptar" type="button">Desencriptar</button>
                     </div>
                 </form>
             </div>
-            <div class="rectangulo">
-                <img src="message.png" alt="Mensaje">
-                <div class="texto">
-                    <h1>Ningún mensaje fue encotrado.</h1>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="rectangulo" id="rectangulo">
+                <img src="message.png" alt="mensaje-encriptar" title="mensaje-encriptar" id="mensaje-encriptar">
+                <div id="leyenda">
+                    <label class="titulo-leyenda">Ningún mensaje fue encontrado</label>
+                    <label class="body-leyenda">Ingrese el texto que desees encriptar o desencriptar.</label>
                 </div>
             </div>
         </main>
-        <footer></footer>
+
+        <footer>
+            <p>
+                <h1>Equipo de desarrollo:</h1>
+                <label>Ivan Tenopala Perez</label>
+            </p>
+        </footer>
+
     </body>
 </html>

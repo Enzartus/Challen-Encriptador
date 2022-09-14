@@ -1,57 +1,52 @@
 body{
-    position: relative;
-    max-width: 1440px;
-    max-height: 1024px;
-
-    background: #f3f5fc;
     font-family: 'Titillium Web', sans-serif;
+    background: #f3f5fc;
 }
 
-.logo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-
+header img{
     position: absolute;
     width: 48px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    margin: 40px;
+    padding: 0px;
 }
 
-.mensaje{
+main{
+    /*position: relative;*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+form textarea{
     position: absolute;
-    width: 680px;
-    height: 320px;
+    width: 50%;
+    height: 350px;
     left: 120px;
-    top: 128px;
+    top: 120px;
+    /*margin: 60px 20px 20px 20px;*/
 
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 32px;
     line-height: 150%;
 
-    background-color: #f3f5fc;
+    border: transparent;
     box-shadow: none;
     outline: none;
-    border: 0;
     resize: none;
+    
+    background-color: #f3f5fc;
 }
 
-.exclamacion{
+.icon-exclamacion{
     width: 16px;
     height: 16px;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     opacity: 75%;
 }
 
-.leyenda{
+.recordatorio{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,10 +54,16 @@ body{
     gap: 8px;
 
     position: absolute;
-    width: 270px;
+    width: 300px;
     height: 18px;
     left: 120px;
-    top: 470px;
+    top: 495px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
 }
 
 .botones{
@@ -73,92 +74,155 @@ body{
     gap: 24px;
 
     position: absolute;
-    width: 680px;
-    height: 33px;
+    width: 50%;
+    height: 67px;
     left: 120px;
-    top: 500px;
+    top: 530px;
+    /*top: 885px;
+    margin: 0 0 20px;
+    padding: 10px 25px;*/
 }
 
 .encriptar{
+    /*display: flex;
+    flex-direction: row;
+    align-items: flex-start;*/
+    padding: 24px;
+    gap: 8px;
+
     width: 328px;
     height: 67px;
 
+    background: #0a3871;
+    border: 0;
     border-radius: 24px;
     font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .desencriptar{
+    /*display: flex;
+    flex-direction: row;
+    align-items: flex-start;*/
+    padding: 24px;
+    gap: 8px;
+
     width: 328px;
     height: 67px;
 
-    border: 1px solid;
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
     border-radius: 24px;
-
     font-family: 'Titillium Web', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .rectangulo{
     position: absolute;
-    width: 300px;
-    height: 532px;
-    left: 900px;
+    width: 22%;
+    /*540*/
+    height: 540px;
+    /*left: 1000px;*/
+    right: 150px;
     top: 40px;
+    margin: 0 auto;
 
-    background: #ffffff;
-
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
     border-radius: 32px;
 }
 
-.rectangulo img{
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    left: 40px;
-    top: 83px;
-}
-
-.texto{
+.rectangulo div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 8px;
+    gap: 16px;
 
     position: absolute;
-    width: 236px;
-    height: 122px;
-    left: 40px;
-    top: 329px;
+    width: 70%;
+    height: 304;
+    left: 16%;
+    top: 64%;
 }
 
-.texto h1{
-    /*width: 336px;
-    height: 58px;*/
+.rectangulo img{
+    position: absolute;
+    width: 236px;
+    height: 236px;
+    /*padding: 35px;*/
+    left: 12%;
+    top: 15%;
+}
 
-    font-family: 'Titillium Web', sans-serif;
+.titulo-leyenda{
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 120%;
+
     text-align: center;
     color: #343a40;
-
 }
 
-.texto p{
-    /*width: 336px;
-    height: 48px;*/
+.body-leyenda{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #495057;
+}
+
+.mensaje-respuesta{
+    width: 80%;
+    height: 70%;
+    margin: 1em;
 
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 150%;
+
+    border: transparent;
+    box-shadow: none;
+    outline: none;
+    resize: none;
+    
+    background-color: #ffffff;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    top: 100%;
+    background: #0a3871;
     text-align: center;
-    color: #495057;
+    color: #ffffff;
+}
+
+footer h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 120%;
+    padding: 8px;
 }
