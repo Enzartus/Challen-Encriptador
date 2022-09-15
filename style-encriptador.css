@@ -191,6 +191,7 @@ form textarea{
 }
 
 .mensaje-respuesta{
+    visibility: hidden;
     width: 80%;
     height: 70%;
     margin: 1em;
