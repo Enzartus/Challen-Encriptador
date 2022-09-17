@@ -25,18 +25,19 @@
                     </label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese el texto aqui..."></textarea>
                     <div class="botones">
-                        <button class="encriptar" type="button" onclick="encriptar()">Encriptar</button>
-                        <button class="desencriptar" type="button">Desencriptar</button>
+                        <button type="button" class="encriptar" onclick="encriptar()">Encriptar!</button>
+                        <button type="button" class="desencriptar" onclick="desencriptar()">Desencriptar!</button>
                     </div>
                 </form>
             </div>
             <div class="rectangulo" id="rectangulo">
-                <img src="message.png" alt="mensaje-encriptar" title="mensaje-encriptar" id="mensaje-encriptar">
+                <img src="message.png" alt="mensaje-encriptar" title="Mensaje encriptar" id="mensaje-encriptar">
                 <div id="leyenda">
                     <label class="titulo-leyenda">Ningún mensaje fue encontrado</label>
                     <label class="body-leyenda">Ingrese el texto que desees encriptar o desencriptar.</label>
                 </div>
                 <textarea name="" id="enc-des" cols="30" rows="10" class="mensaje-respuesta"></textarea>
+                <button class="copiar" id="copiar" onclick="buttonCopiar()">¡Copiar!</button>
             </div>
         </main>
 

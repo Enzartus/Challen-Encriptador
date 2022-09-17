@@ -4,16 +4,20 @@ function encriptar() {
     var leyenda = document.getElementById("leyenda");
     var mensaje = document.getElementById("mensaje").value;
     var textarea = document.getElementById("enc-des");
+    var botonCopiar = document.getElementById("copiar");
 
     if (mensaje != "") {
 
         imagen.style.display = "none";
         leyenda.style.display = "none";
         textarea.style.visibility = "visible";
+        botonCopiar.style.visibility = "visible";
 
         textarea.value = encriptarMensaje(mensaje);
+        document.getElementById("mensaje").value = "";
 
     }
+
 }
 
 function encriptarMensaje(texto) {
@@ -58,19 +62,46 @@ function encriptarMensaje(texto) {
     }
     
     texto = tem.toString().replace(/,/g,"");
-    console.log(texto);
-    /*texto = texto.replaceAll('a',a);*/
 
     return texto;
+
 }
 
-/*function buttonCopiar() {
-    var button = document.createElement("button");
-    button.type = "button";
-    button.textContent = "Copiar";
-    button.value = "Copiar";
-    button.className = "desencriptar";
+function desencriptar() {
+    
+    var imagen = document.getElementById("mensaje-encriptar");
+    var leyenda = document.getElementById("leyenda");
+    var mensaje = document.getElementById("mensaje").value;
+    var textarea = document.getElementById("enc-des");
 
-    var rectangulo = document.getElementById("rectangulo");
-    rectangulo.appendChild(button);
-}*/
+    if (mensaje != "") {
+
+        imagen.style.display = "none";
+        leyenda.style.display = "none";
+        textarea.style.visibility = "visible";
+
+        textarea.value = desencriptarMensaje(mensaje);
+        document.getElementById("mensaje").value = "";
+    }
+
+}
+
+function desencriptarMensaje(mensaje) {
+
+    mensaje = mensaje.replaceAll('ai','a');
+    mensaje = mensaje.replaceAll('enter','e');
+    mensaje = mensaje.replaceAll('imes','i');
+    mensaje = mensaje.replaceAll('ober','o');
+    mensaje = mensaje.replaceAll('ufat','u');
+
+    return mensaje;
+    
+}
+
+function buttonCopiar() {
+
+    var textarea = document.getElementById("enc-des");
+    textarea.select();
+    document.execCommand('copy');
+
+}
