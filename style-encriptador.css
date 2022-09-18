@@ -253,9 +253,10 @@ form textarea{
 
 footer{
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 12%;
-    top: 100%;
     background: #0a3871;
     text-align: center;
     color: #ffffff;
@@ -267,4 +268,143 @@ footer h1{
     font-size: 18px;
     line-height: 120%;
     padding: 8px;
+}
+
+@media screen and (max-width:1360px){
+    footer{
+        top: 101%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /*header img{
+        width: 48px;
+    }
+    
+    main{
+        position: relative;
+        width: 79%;
+        padding: 39px;
+        top: 20px;
+    }
+    
+    form textarea{
+        width: 80%;
+        left: 40px;
+    }
+    
+    .recordatorio{
+        top: 490px;
+        left: 40px;
+    }
+    
+    .botones{
+        width: 80%;
+        flex-direction: column;
+        top: 520px;
+        left: 40px;
+    }
+    
+    .encriptar{
+        width: 100%;
+    }
+    
+    .desencriptar{
+        width: 100%;
+    }
+    
+    .rectangulo{
+        width: 80%;
+        height: 186px;
+        top: 707px;
+        left: 40px;
+    }
+    
+    .rectangulo div{
+        top: 16%;
+    }
+    
+    .rectangulo img{
+        display: none;
+    }
+    
+    .mensaje-respuesta{
+        width: 83%;
+        height: 25%;
+    }
+    
+    .copiar{
+        height: 20%;
+    }
+    
+    footer{
+        top: 145%;
+    }*/
+}
+
+@media screen and (max-width:480px){
+    header img{
+        width: 48px;
+    }
+    
+    main{
+        position: relative;
+        width: 79%;
+        padding: 39px;
+        top: 20px;
+    }
+    
+    form textarea{
+        width: 80%;
+        left: 40px;
+    }
+    
+    .recordatorio{
+        top: 490px;
+        left: 40px;
+    }
+    
+    .botones{
+        width: 80%;
+        flex-direction: column;
+        top: 520px;
+        left: 40px;
+    }
+    
+    .encriptar{
+        width: 100%;
+    }
+    
+    .desencriptar{
+        width: 100%;
+    }
+    
+    .rectangulo{
+        width: 80%;
+        height: 186px;
+        top: 707px;
+        left: 40px;
+    }
+    
+    .rectangulo div{
+        top: 16%;
+    }
+    
+    .rectangulo img{
+        display: none;
+    }
+    
+    .mensaje-respuesta{
+        width: 83%;
+        height: 25%;
+    }
+    
+    .copiar{
+        height: 20%;
+    }
+    
+    footer{
+        top: 145%;
+    }
+
 }

@@ -15,7 +15,6 @@ function encriptar() {
 
         textarea.value = encriptarMensaje(mensaje);
         document.getElementById("mensaje").value = "";
-
     }
 
 }
@@ -62,7 +61,7 @@ function encriptarMensaje(texto) {
     }
     
     texto = tem.toString().replace(/,/g,"");
-
+    
     return texto;
 
 }
@@ -73,12 +72,14 @@ function desencriptar() {
     var leyenda = document.getElementById("leyenda");
     var mensaje = document.getElementById("mensaje").value;
     var textarea = document.getElementById("enc-des");
+    var botonCopiar = document.getElementById("copiar");
 
     if (mensaje != "") {
 
         imagen.style.display = "none";
         leyenda.style.display = "none";
         textarea.style.visibility = "visible";
+        botonCopiar.style.visibility = "visible";
 
         textarea.value = desencriptarMensaje(mensaje);
         document.getElementById("mensaje").value = "";
