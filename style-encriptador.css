@@ -276,32 +276,94 @@ footer h1{
     }
 }
 
-@media screen and (max-width: 768px){
-    /*header img{
-        width: 48px;
+@media screen and (min-width:1600px){
+    .rectangulo img{
+        left: 20%;
+    }
+
+    form textarea{
+        left: 220px;
+    }
+
+    .recordatorio{
+        left: 220px;
+    }
+
+    .botones{
+        left: 220px;
+    }
+
+    .encriptar{
+        width: 390px;
+    }
+
+    .desencriptar{
+        width: 390px;
+    }
+}
+
+@media screen and (width: 828px){
+    main{
+        padding: 0;
+    }
+
+    .rectangulo{
+        width: 25%;
+        right: 35px;
+    }
+
+    .rectangulo img{
+        width: 150px;
+        height: 150px;
+        left: 14%;
+    }
+
+    .rectangulo div{
+        top: 50%;
+    }
+
+    .encriptar{
+        width: 195px;
+    }
+
+    .desencriptar{
+        width: 195px;
+    }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 912px){
+    header img{
+        width: 96px;
     }
     
     main{
         position: relative;
-        width: 79%;
+        width: 90%;
         padding: 39px;
-        top: 20px;
+        top: 40px;
     }
     
     form textarea{
-        width: 80%;
+        width: 89%;
         left: 40px;
+    }
+
+    .icon-exclamacion{
+        width: 20px;
+        height: 20px;
     }
     
     .recordatorio{
-        top: 490px;
+        font-size: 22px;
+        width: 400px;
+        top: 505px;
         left: 40px;
     }
     
     .botones{
-        width: 80%;
+        width: 90%;
         flex-direction: column;
-        top: 520px;
+        top: 540px;
         left: 40px;
     }
     
@@ -314,14 +376,27 @@ footer h1{
     }
     
     .rectangulo{
-        width: 80%;
-        height: 186px;
-        top: 707px;
+        width: 89%;
+        height: 340px;
+        top: 740px;
         left: 40px;
     }
     
     .rectangulo div{
-        top: 16%;
+        top: 30%;
+        align-items: center;
+    }
+
+    .titulo-leyenda{
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 120%;
+    }
+    
+    .body-leyenda{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
     }
     
     .rectangulo img{
@@ -329,17 +404,33 @@ footer h1{
     }
     
     .mensaje-respuesta{
-        width: 83%;
-        height: 25%;
+        width: 93%;
+        height: 45%;
     }
     
     .copiar{
         height: 20%;
+        margin: 2em 2em 2em 5em;
     }
     
     footer{
-        top: 145%;
-    }*/
+        top: 100%;
+    }
+
+    footer h1{
+        font-size: 28px;
+    }
+
+    footer label{
+        font-weight: 400;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px){
+    footer{
+        top: 115%;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -406,5 +497,5 @@ footer h1{
     footer{
         top: 145%;
     }
-
+ 
 }
